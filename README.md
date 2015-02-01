@@ -8,7 +8,7 @@ A Meteor package to aid in pre-loading sound assets and playing audio files. Is 
 
 ## Usage
 
-Meteor Sounds is uses a method of low latency audio to preload audio files on apps built for Cordova. The plugin exposes a variable `MeteorSounds` to the platform `web.cordova`.
+Meteor Sounds uses a method of low latency audio to preload audio files on apps built for Cordova. The plugin exposes a variable `MeteorSounds` to the platform `web.cordova`.
 
 Include a settings.json file like so,
 ```
