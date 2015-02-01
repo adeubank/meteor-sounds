@@ -1,0 +1,23 @@
+<head>
+  <title>example</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button id="click">Tap Me</button>
+  <button id="triumph">Feeling triumphant? Tap me</button>
+  <button id="stop">Stop triumphant noise? Tap me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+  <p>
+    {{#if assetsLoaded}}
+    Assets are loaded!
+    {{else}}
+    Assets are not loaded!
+    {{/if}}
+  </p>
+</template>

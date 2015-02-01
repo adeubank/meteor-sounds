@@ -1,0 +1,12 @@
+{
+    "public" : {
+        "sounds": {
+            "soundFx" : {
+                "click" : "application/click.wav"
+            },
+            "soundAudio" : {
+                "triumph" : "application/triumph.wav"
+            }
+        }
+    }
+}
