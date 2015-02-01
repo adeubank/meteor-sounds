@@ -3,11 +3,20 @@ if (Meteor.isClient) {
   Session.setDefault('counter', 0);
 
   Template.hello.helpers({
+
     counter: function () {
       return Session.get('counter');
     },
+
     assetsLoaded: function () {
-      return MeteorSounds.assetsLoaded.get();
+      if (Meteor.isCordova)
+        return MeteorSounds.assetsLoaded.get();
+      else
+        return '';
+    },
+
+    isCordova: function () {
+      return Meteor.isCordova;
     }
   });
 

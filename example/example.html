@@ -20,4 +20,10 @@
     Assets are not loaded!
     {{/if}}
   </p>
+
+  <p>
+    {{#unless isCordova}}
+      This example works best on a mobile device! Try running, `meteor run android --settings settings.json`
+    {{/unless}}
+  </p>
 </template>
