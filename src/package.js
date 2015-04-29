@@ -1,6 +1,6 @@
 Package.describe({
   name: 'adej:meteor-sounds',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Play local sounds on mobile devices',
   // URL to the Git repository containing the source code for this package.
@@ -18,10 +18,8 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
 
   api.use('reactive-var', 'client');
-
-  api.export('MeteorSounds', ['web.cordova']);
-
   api.addFiles('meteorSounds.js', ['web.cordova']);
 
-  api.versionsFrom("METEOR@1.0.3.1");
+  // export MeteorSounds Object
+  api.export('MeteorSounds', ['web.cordova']);
 });
