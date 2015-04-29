@@ -57,7 +57,8 @@ Router.route('/', {
 | Methods | Description |
 | ------- | ----------- |
 | MeteorSounds.preloadAllAssets() | Preloads all audio files found in Meteor.setting.public.soundFx and Meteor.setting.public.soundAudio |
-| MeteorSounds.play(sound) | Plays a audio file whose id is `sound` |
+| MeteorSounds.play(sound) | Plays an audio file whose id is `sound` |
+| MeteorSounds.loop(sound) | Loop an audio file whose id is `sound` |
 | MeteorSounds.stop(sound) | Stops an audio file whose id is `sound` |
 
 
