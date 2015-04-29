@@ -37,6 +37,10 @@ MeteorSounds.play = function (sound) {
   window.plugins.LowLatencyAudio.play(sound);
 };
 
+MeteorSounds.loop = function (sound) {
+  window.plugins.LowLatencyAudio.loop(sound);
+};
+
 MeteorSounds.stop = function (sound) {
   window.plugins.LowLatencyAudio.stop(sound);
 };
